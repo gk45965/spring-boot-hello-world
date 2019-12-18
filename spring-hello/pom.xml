@@ -53,20 +53,16 @@
 			</exclusions>
 		</dependency>
 
-		<dependency>
-			<groupId>com.google.cloud.tools</groupId>
-			<artifactId>jib-maven-plugin</artifactId>
-			<version>1.8.0</version>
+		<!--<dependency>-->
+			<!--<groupId>com.google.cloud.tools</groupId>-->
+			<!--<artifactId>jib-maven-plugin</artifactId>-->
+			<!--<version>1.8.0</version>-->
 			<!--<configuration>-->
 				<!--<to>-->
 					<!--<image>gcr.io/modular-gantry-262409/spring-booy-example:v1</image>-->
 				<!--</to>-->
-
-
 			<!--</configuration>-->
-
-
-		</dependency>
+		<!--</dependency>-->
 
 	</dependencies>
 
@@ -76,6 +72,20 @@
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
+
+
+			<plugin>
+				<groupId>com.google.cloud.tools</groupId>
+				<artifactId>jib-maven-plugin</artifactId>
+				<version>1.8.0</version>
+				<configuration>
+					<to>
+						<image>gcr.io/modular-gantry-262409/spring-booy-example:v1</image>
+					</to>
+				</configuration>
+			</plugin>
+
+
 		</plugins>
 	</build>
 
