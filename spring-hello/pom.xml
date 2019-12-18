@@ -29,9 +29,16 @@
     <groupId>com.google.cloud.tools</groupId>
     <artifactId>jib-maven-plugin</artifactId>
     <version>1.8.0</version>
-</dependency>
-
+	<configuration>
+		<to>
+			<image>gcr.io/us-central1-a/modular-gantry-262409/spring-booy-example:v1</image>
+		</to>
 		
+		
+	</configuration>
+	
+	
+</dependency>	
 		
 		
 		<dependency>
